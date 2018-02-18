@@ -143,3 +143,40 @@ function cd {
     builtin cd "$@" && ls -F
 }
 alias gdrive='google-drive-ocamlfuse ~/google-drive'
+function bashrcUpload() { 
+  scp ~/.remote/.bashrc rblank@10.250.100.16:~ &&
+  scp ~/.remote/.bashrc rblank@10.250.100.18:~ &&
+  scp ~/.remote/.bashrc rblank@10.250.100.23:~ &&
+  scp ~/.remote/.bashrc rblank@10.250.100.24:~ &&
+  scp ~/.remote/.bashrc rblank@10.250.100.15:~ &&
+  scp ~/.remote/.bashrc rblank@10.250.100.25:~ &&
+  scp ~/.remote/.bashrc rblank@10.250.100.30:~ &&
+  scp ~/.remote/.bashrc rblank@rundeck.tech.visualvest.de:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.165:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.166:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.167:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.168:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.169:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.170:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.115.103:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.115.104:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.105.119:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.105.120:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-test-log01.pironet-ndh.com:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.105:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.106:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.107:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.108:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.103:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.104:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.125.167:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.125.168:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.125.169:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.125.170:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.55:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.116.56:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-app07.pironet-ndh.com:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.146.59:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-log01.pironet-ndh.com:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-imap01.pironet-ndh.com:~
+}

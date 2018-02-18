@@ -14,6 +14,8 @@ alias fsresources='cd /etc/wildfly/vv-resources'
 alias feresources='cd /var/www/vv-resources'
 alias intresources='cd /etc/wildfly/vv-resources' 
 alias jbosscli='sudo -u wildfly /opt/wildfly/bin/jboss-cli.sh -c'
+alias onboardingprod='sudo /opt/onboarding/cron_onboarding.sh prod'
+alias onboardingprodlog='cd /var/log/onboarding/prod/'
 # change dir and ls
 cd() { builtin cd "$@" && ls; }
 
