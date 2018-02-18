@@ -131,7 +131,9 @@ alias app04='ssh rblank@195.227.125.168'
 alias app08='ssh rblank@195.227.125.169'
 alias app09='ssh rblank@195.227.125.170'
 alias app05='ssh rblank@195.227.166.55'
-alias app06='ssh rblank@195.227.116.56'
+alias app06='ssh rblank@195.227.166.56'
+alias app10='ssh rblank@195.227.166.57'
+alias app11='ssh rblank@195.227.166.58'
 alias app07='ssh rblank@vvs-app07.pironet-ndh.com'
 alias log02='ssh rblank@195.227.146.59'
 alias log01='ssh rblank@vvs-log01.pironet-ndh.com'
@@ -149,13 +151,13 @@ function bashrcUpload() {
   scp ~/.remote/.bashrc rblank@10.250.100.23:~ &&
   scp ~/.remote/.bashrc rblank@10.250.100.24:~ &&
   scp ~/.remote/.bashrc rblank@10.250.100.15:~ &&
-  scp ~/.remote/.bashrc rblank@10.250.100.25:~ &&
+ #onboarding vcloud  scp ~/.remote/.bashrc rblank@10.250.100.25:~ &&
   scp ~/.remote/.bashrc rblank@10.250.100.30:~ &&
   scp ~/.remote/.bashrc rblank@rundeck.tech.visualvest.de:~ &&
-  scp ~/.remote/.bashrc rblank@195.227.166.165:~ &&
-  scp ~/.remote/.bashrc rblank@195.227.166.166:~ &&
-  scp ~/.remote/.bashrc rblank@195.227.166.167:~ &&
-  scp ~/.remote/.bashrc rblank@195.227.166.168:~ &&
+ #test-web01 scp ~/.remote/.bashrc rblank@195.227.166.165:~ &&
+ #test-web02 scp ~/.remote/.bashrc rblank@195.227.166.166:~ &&
+ #test-db01 scp ~/.remote/.bashrc rblank@195.227.166.167:~ &&
+ #test-db02 scp ~/.remote/.bashrc rblank@195.227.166.168:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.169:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.170:~ &&
   scp ~/.remote/.bashrc rblank@195.227.115.103:~ &&
@@ -165,8 +167,8 @@ function bashrcUpload() {
   scp ~/.remote/.bashrc rblank@vvs-test-log01.pironet-ndh.com:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.105:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.106:~ &&
-  scp ~/.remote/.bashrc rblank@195.227.166.107:~ &&
-  scp ~/.remote/.bashrc rblank@195.227.166.108:~ &&
+ #db01 scp ~/.remote/.bashrc rblank@195.227.166.107:~ &&
+ #db02 scp ~/.remote/.bashrc rblank@195.227.166.108:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.103:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.104:~ &&
   scp ~/.remote/.bashrc rblank@195.227.125.167:~ &&
@@ -174,7 +176,9 @@ function bashrcUpload() {
   scp ~/.remote/.bashrc rblank@195.227.125.169:~ &&
   scp ~/.remote/.bashrc rblank@195.227.125.170:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.55:~ &&
-  scp ~/.remote/.bashrc rblank@195.227.116.56:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.56:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.57:~ &&
+  scp ~/.remote/.bashrc rblank@195.227.166.58:~ &&
   scp ~/.remote/.bashrc rblank@vvs-app07.pironet-ndh.com:~ &&
   scp ~/.remote/.bashrc rblank@195.227.146.59:~ &&
   scp ~/.remote/.bashrc rblank@vvs-log01.pironet-ndh.com:~ &&
