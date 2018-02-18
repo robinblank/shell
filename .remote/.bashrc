@@ -13,6 +13,7 @@ alias watchservice='tail -f ./server.log | grep -E '.*F$
 alias fsresources='cd /etc/wildfly/vv-resources'
 alias feresources='cd /var/www/vv-resources'
 alias intresources='cd /etc/wildfly/vv-resources' 
+alias jbosscli='sudo -u wildfly /opt/wildfly/bin/jboss-cli.sh -c'
 # change dir and ls
 cd() { builtin cd "$@" && ls; }
 
