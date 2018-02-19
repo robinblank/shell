@@ -9,7 +9,7 @@ fi
 # User specific aliases and functions
 alias prodlog='cd /var/log/vvs/wildfly/vvs/'
 alias testlog='cd /var/log/vvs/wildfly/vvs-test/'
-alias watchservice='tail -f ./server.log | grep -E '.*F$
+alias watchservice='tail -f */wildfly/server.log | grep -E '.*Failed\sto\sstart\sservice'$
 alias fsresources='cd /etc/wildfly/vv-resources'
 alias feresources='cd /var/www/vv-resources'
 alias intresources='cd /etc/wildfly/vv-resources' 
