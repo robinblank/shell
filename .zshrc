@@ -184,3 +184,4 @@ function bashrcUpload() {
   scp ~/.remote/.bashrc rblank@vvs-log01.pironet-ndh.com:~ &&
   scp ~/.remote/.bashrc rblank@vvs-imap01.pironet-ndh.com:~
 }
+alias gdrive='google-drive-ocamlfuse ~/google-drive'
