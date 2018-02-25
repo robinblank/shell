@@ -122,6 +122,7 @@ alias test-log01='ssh rblank@vvs-test-log01.pironet-ndh.com'
 # Prod
 alias web01='ssh rblank@195.227.166.105'
 alias web02='ssh rblank@195.227.166.106'
+alias web03='ssh rblank@vvs-web03.pironet-ndh.com'
 alias db01='ssh rblank@195.227.166.107'
 alias db02='ssh rblank@195.227.166.108'
 alias app01='ssh rblank@195.227.166.103'
