@@ -16,6 +16,7 @@ alias intresources='cd /etc/wildfly/vv-resources'
 alias jbosscli='sudo -u wildfly /opt/wildfly/bin/jboss-cli.sh -c'
 alias onboardingprod='sudo /opt/onboarding/cron_onboarding.sh prod'
 alias onboardingprodlog='cd /var/log/onboarding/prod/'
+alias chgtestconfig='sudo nano /opt/onboarding/onboarding-script/src/config/test.json'
+alias chgprodconfig='sudo nano /opt/onboarding/onboarding-script/src/config/prod.json'
 # change dir and ls
 cd() { builtin cd "$@" && ls; }
-
