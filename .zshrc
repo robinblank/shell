@@ -146,6 +146,8 @@ function cd {
     builtin cd "$@" && ls -F
 }
 alias gdrive='google-drive-ocamlfuse ~/google-drive'
+function cypress() {cd ~/Dokumente/Dev/Testing/cypress && node_modules/.bin/cypress open}
+
 function bashrcUpload() { 
   scp ~/.remote/.bashrc rblank@10.250.100.16:~ &&
   scp ~/.remote/.bashrc rblank@10.250.100.18:~ &&
