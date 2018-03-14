@@ -18,7 +18,8 @@ alias onboardingprod='sudo /opt/onboarding/cron_onboarding.sh prod'
 alias onboardingprodlog='cd /var/log/onboarding/prod/'
 alias chgtestconfig='sudo nano /opt/onboarding/onboarding-script/src/config/test.json'
 alias chgprodconfig='sudo nano /opt/onboarding/onboarding-script/src/config/prod.json'
-alias
+# Watch WildflyBoot
+watchBoot() { tail -f */wildfly/server.log | grep -E '.*Failed\sto\sstart\sservice' | grep -E '*Currently\slocked\sby'; }
 # change dir and ls
 cd() { builtin cd "$@" && ls; }
 health() { curl https://vvs-$1.pironet-ndh.com/risk-functional-service/health -k -H 'host: $2.service.meininvest.de' }
