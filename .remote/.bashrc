@@ -10,7 +10,7 @@ fi
 alias prodlog='cd /var/log/vvs/wildfly/vvs/'
 alias testlog='cd /var/log/vvs/wildfly/vvs-test/'
 alias etcdapi='export ETCDCTL_API=3'
-etcdget() { etcdctl get --prefix masked. "$@"; }
+alias etcdget = 'etcdctl get --prefix masked. "$@"'
 alias fsresources='cd /etc/wildfly/vv-resources'
 alias feresources='cd /var/www/vv-resources'
 alias intresources='cd /etc/wildfly/vv-resources' 

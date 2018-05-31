@@ -99,6 +99,7 @@ prompt_context() {}
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias forwardPort='ssh -L 9000:vvs-db1.pironet-ndh.com:5432 rblank@vvs-app06.pironet-ndh.com'
 alias fs01q='ssh rblank@10.250.100.16'
 alias fs02q='ssh rblank@10.250.100.18'
 alias int01q='ssh rblank@10.250.100.23'
