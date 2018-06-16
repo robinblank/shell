@@ -117,9 +117,13 @@ alias test-app01='ssh rblank@195.227.166.169'
 alias test-app02='ssh rblank@195.227.166.170'
 alias test-app03='ssh rblank@195.227.115.103'
 alias test-app04='ssh rblank@195.227.115.104'
+alias test-app11='ssh rblank@vvs-test-app11.pironet-ndh.com'
 alias test-app05='ssh rblank@195.227.105.119'
 alias test-app06='ssh rblank@195.227.105.120'
+alias test-app13='ssh rblank@vvs-test-app13.pironet-ndh.com'
 alias test-log01='ssh rblank@vvs-test-log01.pironet-ndh.com'
+alias test-log02='ssh rblank@vvs-test-log02.pironet-ndh.com'
+alias test-app07='ssh rblank@vvs-test-app07.pironet-ndh.com'
 # Prod
 alias web01='ssh rblank@195.227.166.105'
 alias web02='ssh rblank@195.227.166.106'
@@ -169,6 +173,10 @@ function bashrcUpload() {
   scp ~/.remote/.bashrc rblank@195.227.105.119:~ &&
   scp ~/.remote/.bashrc rblank@195.227.105.120:~ &&
   scp ~/.remote/.bashrc rblank@vvs-test-log01.pironet-ndh.com:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-test-app11.pironet-ndh.com:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-test-app13.pironet-ndh.com:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-test-log02.pironet-ndh.com:~ &&
+  scp ~/.remote/.bashrc rblank@vvs-test-app07.pironet-ndh.com:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.105:~ &&
   scp ~/.remote/.bashrc rblank@195.227.166.106:~ &&
  #db01 scp ~/.remote/.bashrc rblank@195.227.166.107:~ &&
