@@ -99,7 +99,7 @@ prompt_context() {}
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias forwardPort='ssh -L 9000:vvs-db1.pironet-ndh.com:5432 rblank@vvs-app06.pironet-ndh.com'
+alias portfwd='ssh -L 9000:vvs-db1.pironet-ndh.com:5432 rblank@vvs-app06.pironet-ndh.com'
 alias fs01q='ssh rblank@10.250.100.16'
 alias fs02q='ssh rblank@10.250.100.18'
 alias int01q='ssh rblank@10.250.100.23'
@@ -195,5 +195,48 @@ function bashrcUpload() {
   scp ~/.remote/.bashrc rblank@195.227.146.59:~ &&
   scp ~/.remote/.bashrc rblank@vvs-log01.pironet-ndh.com:~ &&
   scp ~/.remote/.bashrc rblank@vvs-imap01.pironet-ndh.com:~
+}
+function bashrcDelete() { 
+  ssh rblank@10.250.100.16 'rm /home/rblank/.bashrc' &&
+  ssh rblank@10.250.100.18 'rm /home/rblank/.bashrc' &&
+  ssh rblank@10.250.100.23 'rm /home/rblank/.bashrc' &&
+  ssh rblank@10.250.100.24 'rm /home/rblank/.bashrc' &&
+  ssh rblank@10.250.100.15 'rm /home/rblank/.bashrc' &&
+ #onboarding vcloud  ssh rblank@10.250.100.25 'rm /home/rblank/.bashrc' &&
+  ssh rblank@10.250.100.30 'rm /home/rblank/.bashrc' &&
+  ssh rblank@rundeck.tech.visualvest.de 'rm /home/rblank/.bashrc' &&
+ #test-web01 ssh rblank@195.227.166.165 'rm /home/rblank/.bashrc' &&
+ #test-web02 ssh rblank@195.227.166.166 'rm /home/rblank/.bashrc' &&
+ #test-db01 ssh rblank@195.227.166.167 'rm /home/rblank/.bashrc' &&
+ #test-db02 ssh rblank@195.227.166.168 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.169 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.170 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.115.103 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.115.104 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.105.119 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.105.120 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-test-log01.pironet-ndh.com 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-test-app11.pironet-ndh.com 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-test-app13.pironet-ndh.com 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-test-log02.pironet-ndh.com 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-test-app07.pironet-ndh.com 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.105 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.106 'rm /home/rblank/.bashrc' &&
+ #db01 ssh rblank@195.227.166.107 'rm /home/rblank/.bashrc' &&
+ #db02 ssh rblank@195.227.166.108 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.103 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.104 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.125.167 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.125.168 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.125.169 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.125.170 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.55 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.56 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.57 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.166.58 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-app07.pironet-ndh.com 'rm /home/rblank/.bashrc' &&
+  ssh rblank@195.227.146.59 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-log01.pironet-ndh.com 'rm /home/rblank/.bashrc' &&
+  ssh rblank@vvs-imap01.pironet-ndh.com
 }
 alias gdrive='google-drive-ocamlfuse ~/google-drive'

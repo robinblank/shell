@@ -27,4 +27,4 @@ watchBoot() { tail -f */wildfly/server.log | grep -E '.*Failed\sto\sstart\sservi
 # change dir and ls
 cd() { builtin cd "$@" && ls; }
 #health() { curl https://vvs-$1.pironet-ndh.com/risk-functional-service/health -k -H 'host: $2.service.meininvest.de'; }
-alias elastic = 'export NO_PROXY=localhost,127.0.0.1'
+alias elastic='export NO_PROXY=localhost,127.0.0.1'
