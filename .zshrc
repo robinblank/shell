@@ -240,3 +240,4 @@ function bashrcDelete() {
   ssh rblank@vvs-imap01.pironet-ndh.com
 }
 alias gdrive='google-drive-ocamlfuse ~/google-drive'
+alias forward='ssh -L 9000:vvs-db1.pironet-ndh.com:5432 rblank@vvs-app06.pironet-ndh.com'
